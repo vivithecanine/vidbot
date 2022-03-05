@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  vidbot:
+    build: .
+    deploy:
+      replicas: 1
+    env_file:
+      - .env
+
