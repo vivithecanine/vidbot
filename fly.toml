@@ -1,0 +1,24 @@
+# fly.toml file generated for restless-smoke-2417 on 2022-03-06T14:58:15-06:00
+
+app = "restless-smoke-2417"
+
+kill_signal = "SIGINT"
+kill_timeout = 5
+processes = []
+
+# [checks.health]
+# type = "script"
+# interval = 60
+# command = "/app/health.sh"
+# restart_limit = 0
+
+[env]
+#  derp = "herp"
+
+#[deploy]
+#  release_command = "do migration here"
+
+[experimental]
+  allowed_public_ports = []
+  auto_rollback = true
+
